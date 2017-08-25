@@ -1,0 +1,30 @@
+
+<agent resources="resources" application="Kubernetes" type="ABAQUS">
+  <info>Submit a job: Kubernetes</info>
+  <lastmodified>2017-06-17 11:34:59</lastmodified>
+  <modifier>lsfadmin</modifier>
+  <action id="submit" label="submit" result="text/xml">Kubernetes.cmd</action>
+  <repository>
+    <application id="application" state="expandEnable" info="Application Parameters" helpText="Asterisk (*) = required field.">
+      <option defaultValue="perl" id="IMAGE" label="Image" required="" hidden="false" type="list" width="20" editable="true">
+        <option id="perl" hidden="false" selected="true">perl</option>
+        <option id="tensorflow/tensorflow" hidden="false">tensorflow/tensorflow</option>
+      </option>
+      <option defaultValue="" id="COMMAND" label="COMMAND" required="" hidden="false" type="text" width="40" editable="true"></option>
+      <option defaultValue="" id="JOB_NAME" label="Job Name" hidden="false" type="text" editable="true"></option>
+    </application>
+    <application id="cluster" state="expandEnable" info="Cluster Parameters" helpText="Asterisk (*) = required field.">
+      <option defaultValue="normal" id="QUEUE" label="Queue" hidden="false" type="list" editable="true">
+        <action id="queues">$GUI_CONFDIR/application/options/queue.sh normal</action>
+      </option>
+    </application>
+    <application id="file" state="expandEnable" info="Application Data Files" helpText="Asterisk (*) = required field."/>
+  </repository>
+  <helpdoc>
+    <pagetitle><![CDATA[]]></pagetitle>
+    <section id="1">
+      <stitle><![CDATA[]]></stitle>
+      <scontent><![CDATA[]]></scontent>
+    </section>
+  </helpdoc>
+</agent>
