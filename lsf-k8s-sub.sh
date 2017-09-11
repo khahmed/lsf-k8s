@@ -42,7 +42,7 @@ pod=""
 echo "Waiting to get pod for job"
 while [ -z "$pod" ] 
 do
-    pod=`kubectl describe jobs $jobname | grep 'Created pod' | awk '{print $9}'`
+    pod=$(kubectl get pods  --show-all --selector=job-name=$jobname --output=jsonpath={.items..metadata.name})
     sleep 1
     echo "Retrying.."
 done
