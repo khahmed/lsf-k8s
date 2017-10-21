@@ -19,6 +19,6 @@ entries:
     - https://hub.docker.com/r/huxl/lsf/
     tillerVersion: '>=2.4.0'
     urls:
-    - http://192.168.27.100:9191/ibm-lsfce-dev-10.1.1.tgz
+    - https://raw.githubusercontent.com/khahmed/lsf-k8s/master//ibm-lsfce-dev-10.1.1.tgz
     version: 10.1.1
 generated: 2017-10-16T23:49:16.912596486+02:00
