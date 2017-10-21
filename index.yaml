@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  ibm-lsfce-dev:
+  - apiVersion: v1
+    created: 2017-10-20T09:46:31.496675167-04:00
+    description: IBM LSF Community Edition cluster with Application Center GUI
+    digest: 7400b265abd242407081237d7e4919d1f0c717254f9a278a021d5e5e55e36b8b
+    home: https://www.ibm.com/support/knowledgecenter/en/SS4RPL_4.2.2/docs_shared/bundled_lsfce.html
+    icon: http://platform.csdn.net/images/pro_02.gif
+    keywords:
+    - lsf
+    - cluster
+    - job
+    - distributed
+    maintainers:
+    - name: IBM Spectrum Computing
+    name: ibm-lsfce-dev
+    sources:
+    - https://hub.docker.com/r/huxl/lsf/
+    tillerVersion: '>=2.4.0'
+    urls:
+    - http://192.168.27.100:9191/ibm-lsfce-dev-10.1.1.tgz
+    version: 10.1.1
+generated: 2017-10-16T23:49:16.912596486+02:00
